@@ -1,0 +1,30 @@
+
+
+برای ویندوز:
+
+```batch
+# دانلود فایل‌ها در پوشه gamehub-token-desktop
+# سپس:
+build-windows.bat
+```
+
+برای لینوکس/مک:
+
+```bash
+chmod +x build-electron.sh
+./build-electron.sh
+```
+
+اجرای نسخه توسعه:
+
+```bash
+npm run dev
+# در ترمینال دیگر:
+npm run electron-dev
+```
+
+📦 خروجی:
+
+· Windows: *.exe در پوشه dist/
+· macOS: *.dmg در پوشه dist/
+· Linux: *.AppImage در پوشه dist/
