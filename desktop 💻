@@ -1,0 +1,15 @@
+gamehub-token-desktop/
+├── 📄 package.json
+├── 📄 electron.js
+├── 📄 main.js
+├── 📄 next.config.js
+├── 📄 build-electron.sh
+├── 📄 build-windows.bat
+├── 📄 README.md
+├── 📁 public/
+│   ├── 📄 manifest.json
+│   ├── 🖼️ icon.ico
+│   ├── 🖼️ icon.png
+│   └── 🖼️ icon.icns
+└── 📁 pages/
+    └── 📄 index.tsx
