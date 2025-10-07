@@ -1,0 +1,9 @@
+gamehub-vault/
+├── public/          # فایل‌های استاتیک
+├── pages/           # صفحات و API routes
+├── components/      # کامپوننت‌های ری‌اکت
+├── lib/             # utilities و کتابخانه‌ها
+├── models/          # مدل‌های دیتابیس
+├── styles/          # استایل‌ها
+├── install.sh       # اسکریپت نصب
+└── README.md        # مستندات
