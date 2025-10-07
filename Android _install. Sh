@@ -1,0 +1,80 @@
+#!/bin/bash
+
+echo " "
+echo "📱 ===================================="
+echo "🎮 GAMEHUB TOKEN - ANDROID INSTALLER"
+echo "📱 ===================================="
+echo " "
+
+# Check Node.js
+if ! command -v node &> /dev/null; then
+    echo "❌ Node.js is not installed!"
+    echo "📥 Please install Node.js from: https://nodejs.org"
+    exit 1
+fi
+
+echo "✅ Node.js version: $(node --version)"
+
+# Check Java for Android
+if ! command -v java &> /dev/null; then
+    echo "⚠️  Java not found. Android build might need Java JDK"
+fi
+
+# Install dependencies
+echo " "
+echo "📦 Installing dependencies..."
+npm install
+
+if [ $? -ne 0 ]; then
+    echo "❌ npm install failed!"
+    exit 1
+fi
+
+# Build Next.js
+echo " "
+echo "🔨 Building project..."
+npm run build
+
+if [ $? -ne 0 ]; then
+    echo "❌ Build failed!"
+    exit 1
+fi
+
+# Install Capacitor
+echo " "
+echo "⚡ Installing Capacitor..."
+npm install @capacitor/core @capacitor/cli @capacitor/android
+
+# Initialize Capacitor
+echo " "
+echo "🎯 Initializing Capacitor..."
+npx cap init GameHubToken com.gamehub.token --web-dir out
+
+# Add Android platform
+echo " "
+echo "🤖 Adding Android platform..."
+npx cap add android
+
+# Sync with Android
+echo " "
+echo "🔄 Syncing with Android..."
+npx cap sync android
+
+echo " "
+echo "✅ ===================================="
+echo "🎉 INSTALLATION COMPLETED SUCCESSFULLY!"
+echo "✅ ===================================="
+echo " "
+echo "📋 NEXT STEPS:"
+echo "   1. Run: npx cap open android"
+echo "   2. Android Studio will open"
+echo "   3. In Android Studio: Build → Generate Signed Bundle / APK"
+echo "   4. Follow the wizard to create your APK"
+echo " "
+echo "🔧 QUICK COMMANDS:"
+echo "   📱 Open Android: npx cap open android"
+echo "   🔄 Sync changes: npx cap sync android"
+echo "   🏗️  Build APK: npm run apk-debug"
+echo " "
+echo "🎮 GameHub Token Ready for Android!"
+echo " "
