@@ -1,0 +1,40 @@
+📁 ساختار پروژه
+
+· /pages - کامپوننت‌های React
+· /public - فایل‌های استاتیک
+· android/ - پروژه اندروید
+
+🔧 اسکریپت‌های مفید
+
+· npm run build-android - ساخت برای اندروید
+· npm run open-android - باز کردن در Android Studio
+· npm run apk-debug - ساخت APک دیباگ
+
+📞 پشتیبانی
+
+تیم توسعه GameHub Token
+
+```
+
+---
+
+## 🎯 **دستورات اجرای سریع:**
+
+```bash
+# 1. ایجاد پوشه و ورود به آن
+mkdir gamehub-token-android
+cd gamehub-token-android
+
+# 2. ایجاد فایل‌های فوق با محتوای داده شده
+
+# 3. اجرای نصب
+chmod +x android-install.sh
+./android-install.sh
+
+# 4. ساخت APK
+chmod +x build-apk.sh
+./build-apk.sh
+
+# 5. باز کردن در Android Studio
+npx cap open android
+```
