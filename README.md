@@ -1,4 +1,4 @@
-{
+https://github.com/asanpardazzagros-debug/Gamehub-vault{
   "name": "gamehub-token-desktop",
   "version": "1.0.0",
   "description": "GameHub Token Desktop App - Crypto Gaming Platform",
