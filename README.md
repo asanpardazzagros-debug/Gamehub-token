@@ -1,3 +1,85 @@
+🎮 GAMEHUB TOKEN
+
+The official token powering the GameWallet ecosystem—used for in-game rewards, item purchases, and community governance.
+
+---
+
+🚀 Features
+
+- ✅ ERC-20 compliant smart contract
+- 🎁 Reward distribution and airdrops
+- 🛒 In-game item purchases and upgrades
+- 🗳️ DAO-based community voting
+
+---
+
+🧠 Project Vision
+
+To create a utility-driven, brand-conscious token that enhances user engagement in blockchain gaming—focusing on UX, security, and collective growth.
+
+---
+
+🔧 Installation & Setup
+
+`bash
+git clone https://github.com/apz-eth/gamehub-token.git
+cd gamehub-token
+npm install
+npx hardhat test
+`
+
+---
+
+📜 Smart Contract Details
+
+- Language: Solidity  
+- Tools: Hardhat, OpenZeppelin  
+- Testnet: Sepolia  
+- Contract Address (Testnet): 0x...
+
+---
+
+🎨 Branding & Design
+
+- Logo: assets/logo.png  
+- Colors: #FFB800 (Gold), #1A1A1A (Dark)  
+- Fonts: Inter / Vazir
+
+---
+
+🧑‍🤝‍🧑 Contributors
+
+| Name   | Role             | Link                          |
+|--------|------------------|-------------------------------|
+| Khalil | Founder & Dev    | apz.eth |
+| ...    | ...              | ...                           |
+
+---
+
+📬 Contact
+
+- Twitter: @gamehubtoken  
+- Discord: discord.gg/gamehub  
+- Email: contact@gamehub.xyz
+
+---
+
+📅 Roadmap
+
+- [x] Smart contract development  
+- [x] Testnet deployment  
+- [ ] GameWallet integration  
+- [ ] Airdrop launch  
+- [ ] DAO setup and governance
+
+---
+
+🛡️ License
+
+This project is released under the MIT License. See LICENSE for details.
+`
+
+---
 
 
 🗳️ مرحله: سیستم رأی‌گیری برای Gamehub-token
